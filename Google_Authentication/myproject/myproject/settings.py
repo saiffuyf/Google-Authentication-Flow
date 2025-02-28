@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-l$9@ke1(%q_#5k*r=hrv(7yc(5@67hb3(__#$)y(191m-4#j^5'
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -42,12 +42,7 @@ INSTALLED_APPS = [
 ]
 
 
-GOOGLE_CLIENT_ID = "432600026552-d1im2q9gafsfml0i0r9fpcp28vv9de6t.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET = "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"
-GOOGLE_REDIRECT_URI = "http://localhost:8000/auth/callback/"
 
-# Add secure transport for local development
-os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
 
 MIDDLEWARE = [
